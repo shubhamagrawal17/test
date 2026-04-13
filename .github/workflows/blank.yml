@@ -1,0 +1,8 @@
+name: demo
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: print
+        run: echo "hello world"
