@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: dist   # change to dist if needed
+          path: .  # change to dist if needed
           retention-days: 7
 
   test:
