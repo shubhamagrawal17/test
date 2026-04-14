@@ -15,6 +15,11 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npm run build
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: github-actions-webapp/build 
 
   test:
     runs-on: ubuntu-latest
